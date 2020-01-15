@@ -2,6 +2,7 @@ pipeline {
     agent { dockerfile true }
     environment {
         DOCKER_IMAGE_NAME = "elqahtani/train-schedule"
+        DOCKER_SOCK = "-v /var/run/docker.sock:/var/run/docker.sock"
     }
     stages {
         stage('Build Docker Image') {
@@ -10,7 +11,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build(DOCKER_IMAGE_NAME) -v /var/run/docker.sock:/var/run/docker.sock
+                    app = docker.build(DOCKER_IMAGE_NAME (DOCKER_SOCK))
                 }
             }
         }
