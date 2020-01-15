@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE_NAME = "elqahtani/train-schedule"
+        DOCKER_IMAGE_NAME = "elqahtani/hogwart-express"
     }
     stages {
         stage('Build Docker Image') {
@@ -39,7 +39,7 @@ pipeline {
                 milestone(1)
                 kubernetesDeploy(
                     kubeconfigId: 'kubeconfig',
-                    configs: 'train-schedule-kube.yml',
+                    configs: 'hogwart-kube.yaml	',
                     enableConfigSubstitution: true
                 )
             }
