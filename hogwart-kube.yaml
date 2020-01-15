@@ -20,7 +20,7 @@ metadata:
   labels:
     app: hogwart-express
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hogwart-express
