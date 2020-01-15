@@ -8,8 +8,8 @@ spec:
     app: hogwarts-express
   ports:
   - protocol: TCP
-    port: 3000
-    nodePort: 3000
+    port: 30000
+    nodePort: 30000
 
 ---
 
