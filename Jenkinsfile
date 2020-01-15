@@ -10,7 +10,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build(DOCKER_IMAGE_NAME)
+                    app = docker.build(DOCKER_IMAGE_NAME) -v /var/run/docker.sock:/var/run/docker.sock
                 }
             }
         }
