@@ -6,6 +6,10 @@ spec:
   type: LoadBalancer
   selector:
     app: hogwarts-express
+  ports:
+  - protocol: TCP
+    port: 30000
+    nodePort: 30000
 
 ---
 
