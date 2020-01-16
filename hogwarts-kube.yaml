@@ -35,11 +35,11 @@ spec:
       - name: hogwarts-express
         image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
         ports:
-        - containerPort: 30000
+        - containerPort: 31337
         livenessProbe:
           httpGet:
             path: /
-            port: 30000
+            port: 31337
           initialDelaySeconds: 15
           timeoutSeconds: 1
           periodSeconds: 10
