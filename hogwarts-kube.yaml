@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: hogwarts-express-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: hogwarts-express
   ports:
