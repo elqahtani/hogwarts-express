@@ -2,7 +2,7 @@
 
 Simple Node JS Application for demo purpose, use CI / CD Jenkins deployment into Kubernetes. 
 
-##
+## How To
 
 Use Minikube in local development. And don't forget activate Ingress in minikube
 
