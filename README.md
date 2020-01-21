@@ -1,4 +1,4 @@
-# hogwart-express
+# hogwarts-express
 
 Simple Node JS Application for demo purpose, use CI / CD Jenkins deployment into Kubernetes. 
 
